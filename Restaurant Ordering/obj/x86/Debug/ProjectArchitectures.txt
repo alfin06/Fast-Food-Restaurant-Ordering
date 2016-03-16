@@ -1,0 +1,1 @@
+D:\Files\Junior\CS 364 - .NET Programming\04 - Restaurant Ordering\Restaurant Ordering\Restaurant Ordering.csproj;x86

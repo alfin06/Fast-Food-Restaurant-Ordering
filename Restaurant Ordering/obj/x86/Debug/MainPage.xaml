@@ -1,0 +1,118 @@
+﻿<Page
+    x:Class="Restaurant_Ordering.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Restaurant_Ordering"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="Black" Margin="0,-3,0,3">
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="201" Margin="35,82,0,0" Stroke="Black" VerticalAlignment="Top" Width="282"/>
+        <Image x:ConnectionId='1' x:Name="burgerImage" HorizontalAlignment="Left" Source="/Assets/burger.jpg" Height="129" Margin="40,105,0,0" VerticalAlignment="Top" Width="145"/>
+        <TextBlock x:ConnectionId='2' x:Name="burgerLabel" FontWeight="Bold" HorizontalAlignment="Left" Margin="183,119,0,0" TextWrapping="Wrap" Text="Burger Sandwich" FontSize="14" VerticalAlignment="Top" Height="20" Width="121"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="26" Margin="183,142,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
+        <TextBlock x:ConnectionId='3' x:Name="burgerPriceLabel" HorizontalAlignment="Left" Margin="183,142,0,0" TextWrapping="Wrap" Text="$ 4.19" Foreground="White" FontSize="16" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBox x:ConnectionId='4' x:Name="burgerAmt" IsEnabled="False" HorizontalAlignment="Left" Margin="245,179,0,0" TextWrapping="Wrap" Text="" FontSize="25" TextAlignment="Center" VerticalAlignment="Top" Height="44" Width="48"/>
+        <TextBlock x:ConnectionId='5' x:Name="burgerQtyLabel" FontSize="10" HorizontalAlignment="Left" Margin="196,179,0,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" Height="13" Width="44"/>
+        <RadioButton x:ConnectionId='6' x:Name="burgerButton" GroupName="sandwichType" Content="" HorizontalAlignment="Left" Margin="165,251,0,0" VerticalAlignment="Top"                                IsTabStop="False"/>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="201" Margin="317,82,0,0" Stroke="Black" VerticalAlignment="Top" Width="282"/>
+        <Image x:ConnectionId='7' x:Name="fishImage" HorizontalAlignment="Left" Source="/Assets/fish.jpg" Height="130" Margin="321,105,0,0" VerticalAlignment="Top" Width="144"/>
+        <TextBlock x:ConnectionId='8' x:Name="fishLabel" FontWeight="Bold" HorizontalAlignment="Left" Margin="456,121,0,0" TextWrapping="Wrap" Text="Fillet Fish Sandwich" FontSize="14" VerticalAlignment="Top" Height="20" Width="139"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="26" Margin="467,142,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
+        <TextBlock x:ConnectionId='9' x:Name="fishPriceLabel" HorizontalAlignment="Left" Margin="467,144,0,0" TextWrapping="Wrap" Text="$ 3.99" Foreground="White" FontSize="16" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Top" Height="26" Width="70"/>
+        <TextBox x:ConnectionId='10' x:Name="fishAmt" IsEnabled="False" HorizontalAlignment="Left" Margin="520,179,0,0" TextWrapping="Wrap" Text="" FontSize="25" TextAlignment="Center" VerticalAlignment="Top" Height="44" Width="48"/>
+        <TextBlock x:ConnectionId='11' x:Name="fishQtyLabel" FontSize="10" HorizontalAlignment="Left" Margin="470,179,0,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" Height="13" Width="45"/>
+        <RadioButton x:ConnectionId='12' x:Name="fishButton" GroupName="sandwichType" Content="" HorizontalAlignment="Left" Margin="456,251,0,0" VerticalAlignment="Top"                              IsTabStop="False"/>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="201" Margin="35,283,0,0" Stroke="Black" VerticalAlignment="Top" Width="282"/>
+        <TextBlock x:ConnectionId='13' x:Name="chickenLabel" FontWeight="Bold" HorizontalAlignment="Left" Margin="181,313,0,0" TextWrapping="Wrap" Text="Chicken Sandwich" FontSize="14" VerticalAlignment="Top" Height="20" Width="130"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="26" Margin="183,336,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
+        <TextBlock x:ConnectionId='14' x:Name="chickenPriceLabel" HorizontalAlignment="Left" Margin="181,336,0,0" TextWrapping="Wrap" Text="$ 4.99" Foreground="White" FontSize="16" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Top" Height="26" Width="71"/>
+        <TextBox x:ConnectionId='15' x:Name="chickenAmt" IsEnabled="False" HorizontalAlignment="Left" Margin="245,384,0,0" TextWrapping="Wrap" Text="" FontSize="25" TextAlignment="Center" VerticalAlignment="Top" Height="45" Width="48"/>
+        <TextBlock x:ConnectionId='16' x:Name="chickenQtyLabel" FontSize="10" HorizontalAlignment="Left" Margin="196,384,0,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" Height="14" Width="44"/>
+        <Image x:ConnectionId='17' x:Name="chickenImage" HorizontalAlignment="Left" Source="/Assets/chicken.jpg" Height="129" Margin="39,313,0,0" VerticalAlignment="Top" Width="140"/>
+        <RadioButton x:ConnectionId='18' x:Name="chickenButton" GroupName="sandwichType" Content="" HorizontalAlignment="Left" Margin="165,452,0,0" VerticalAlignment="Top"                                 IsTabStop="False"/>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="201" Margin="317,283,0,0" Stroke="Black" VerticalAlignment="Top" Width="282"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="26" Margin="463,336,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
+        <TextBlock x:ConnectionId='19' x:Name="hotdogPriceLabel" HorizontalAlignment="Left" Margin="463,338,0,0" TextWrapping="Wrap" Text="$ 3.59" Foreground="White" FontSize="16" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Top" Height="26" Width="71"/>
+        <Image x:ConnectionId='20' x:Name="hotdogImage" HorizontalAlignment="Left" Source="/Assets/hotdog.jpg" Height="129" Margin="327,313,0,0" VerticalAlignment="Top" Width="140"/>
+        <TextBlock x:ConnectionId='21' x:Name="hotdogLabel" FontWeight="Bold" HorizontalAlignment="Left" Margin="456,313,0,0" TextWrapping="Wrap" Text="Hot Dog Sandwich" FontSize="14" VerticalAlignment="Top" Height="20" Width="130"/>
+        <TextBox x:ConnectionId='22' x:Name="hotdogAmt" IsEnabled="False" HorizontalAlignment="Left" Margin="520,384,0,0" TextWrapping="Wrap" Text="" FontSize="25" TextAlignment="Center" VerticalAlignment="Top" Height="45" Width="48"/>
+        <TextBlock x:ConnectionId='23' x:Name="hotdogQtyLabel" FontSize="10" HorizontalAlignment="Left" Margin="470,387,0,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" Height="14" Width="44"/>
+        <RadioButton x:ConnectionId='24' x:Name="hotdogButton" GroupName="sandwichType" Content="" HorizontalAlignment="Left" Margin="456,452,0,0" VerticalAlignment="Top"                                IsTabStop="False"/>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="100" Margin="35,487,0,0" Stroke="Black" VerticalAlignment="Top" Width="564"/>
+        <TextBlock x:ConnectionId='25' x:Name="oppingLabel" FontSize="10" HorizontalAlignment="Left" Margin="55,499,0,0" TextWrapping="Wrap" Text="Toppings:" VerticalAlignment="Top" Height="13" Width="47"/>
+
+        <CheckBox x:ConnectionId='26' x:Name="all" IsEnabled="False" FontSize="10" Content="All" HorizontalAlignment="Left" Margin="55,519,0,0" VerticalAlignment="Top" Height="22" Width="89"                                                 />
+        <CheckBox x:ConnectionId='27' x:Name="lettuce" IsEnabled="False" FontSize="10" Content="Lettuce" HorizontalAlignment="Left" Margin="55,551,0,0" VerticalAlignment="Top" Height="21" Width="89"/>
+        <CheckBox x:ConnectionId='28' x:Name="tomato" IsEnabled="False" FontSize="10" Content="Tomato" HorizontalAlignment="Left" Margin="165,519,0,0" VerticalAlignment="Top" Height="22" Width="89"/>
+        <CheckBox x:ConnectionId='29' x:Name="onion" IsEnabled="False" FontSize="10" Content="Onion" HorizontalAlignment="Left" Margin="165,551,0,0" VerticalAlignment="Top" Height="22" Width="89"/>
+        <CheckBox x:ConnectionId='30' x:Name="mushrooms" IsEnabled="False" FontSize="10" Content="Mushrooms" HorizontalAlignment="Left" Margin="272,519,0,0" VerticalAlignment="Top" Height="21" Width="89"/>
+        <CheckBox x:ConnectionId='31' x:Name="cheddar" IsEnabled="False" FontSize="10" Content="Cheddar Cheese" HorizontalAlignment="Left" Margin="272,551,0,0" VerticalAlignment="Top" Height="22" Width="101"/>
+        <CheckBox x:ConnectionId='32' x:Name="pickles" IsEnabled="False" FontSize="10" Content="Sweet Pickles" HorizontalAlignment="Left" Margin="397,519,0,0" VerticalAlignment="Top" Height="22" Width="89"/>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="167" Margin="35,592,0,0" Stroke="Black" VerticalAlignment="Top" Width="282"/>
+        <Image x:ConnectionId='33' x:Name="friesImage" HorizontalAlignment="Left" Source="/Assets/fries.jpg" Height="129" Margin="45,628,0,0" VerticalAlignment="Top" Width="140"/>
+        <TextBlock x:ConnectionId='34' x:Name="friesLabel" FontWeight="Bold" HorizontalAlignment="Left" Margin="190,632,0,0" TextWrapping="Wrap" Text="French Fries" FontSize="14" VerticalAlignment="Top" Height="20" Width="130"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="26" Margin="190,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
+        <TextBlock x:ConnectionId='35' x:Name="friesPriceLabel" HorizontalAlignment="Left" Margin="190,657,0,0" TextWrapping="Wrap" Text="$ 2.19" Foreground="White" FontSize="16" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Top" Height="26" Width="71"/>
+        <TextBlock x:ConnectionId='36' x:Name="friesQtyLabel" FontSize="10" HorizontalAlignment="Left" Margin="190,703,0,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" Height="14" Width="44"/>
+        <RadioButton x:ConnectionId='37' x:Name="friesButton" GroupName="sandwichType" Content="" HorizontalAlignment="Left" Margin="165,723,0,0" VerticalAlignment="Top"                               IsTabStop="False"/>
+        <TextBox x:ConnectionId='38' x:Name="friesAmt" IsEnabled="False" HorizontalAlignment="Left" Margin="245,703,0,0" TextWrapping="Wrap" Text="" FontSize="25" TextAlignment="Center" VerticalAlignment="Top" Height="45" Width="48"/>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="167" Margin="317,592,0,0" Stroke="Black" VerticalAlignment="Top" Width="282"/>
+        <Image x:ConnectionId='39' x:Name="sodaImage" HorizontalAlignment="Left" Source="/Assets/soda.jpg" Height="129" Margin="327,626,0,0" VerticalAlignment="Top" Width="140"/>
+        <TextBlock x:ConnectionId='40' x:Name="sodaLabel" FontWeight="Bold" HorizontalAlignment="Left" Margin="456,632,0,0" TextWrapping="Wrap" Text="Soda" FontSize="14" VerticalAlignment="Top" Height="20" Width="130"/>
+        <Rectangle Fill="Black" HorizontalAlignment="Left" Height="26" Margin="456,657,0,0" Stroke="Black" VerticalAlignment="Top" Width="74"/>
+        <TextBlock x:ConnectionId='41' x:Name="sodaPriceLabel" HorizontalAlignment="Left" Margin="459,657,0,0" TextWrapping="Wrap" Text="$ 1.00" Foreground="White" FontSize="16" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Top" Height="26" Width="71"/>
+        <TextBlock x:ConnectionId='42' x:Name="sodaQtyLabel" FontSize="10" HorizontalAlignment="Left" Margin="470,703,0,0" TextWrapping="Wrap" Text="Quantity:" VerticalAlignment="Top" Height="14" Width="44"/>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="428" Margin="736,82,0,0" Stroke="Black" VerticalAlignment="Top" Width="481"/>
+        <TextBlock x:ConnectionId='43' x:Name="orderLabel" FontWeight="Bold" HorizontalAlignment="Left" Margin="761,107,0,0" TextWrapping="Wrap" Text="Your Order:" FontFamily="Times New Roman" FontSize="28" VerticalAlignment="Top"/>
+
+        <TextBlock x:ConnectionId='44' x:Name="orderSummary" ScrollViewer.HorizontalScrollBarVisibility="Visible" HorizontalAlignment="Left" FontFamily="Times New Roman" Height="309" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="438" Margin="761,145,0,0"/>
+        <Button x:ConnectionId='45' x:Name="clear" Content="Clear" Background="Red" Foreground="AntiqueWhite" FontWeight="Bold" HorizontalAlignment="Left" Margin="1022,470,0,0" VerticalAlignment="Top" Width="86"                     IsTabStop="False"/>
+        <Button x:ConnectionId='46' x:Name="checkout" Content="Checkout" Background="Red" Foreground="AntiqueWhite" FontWeight="Bold" HorizontalAlignment="Left" Margin="1113,470,0,0" VerticalAlignment="Top"                        IsTabStop="False"/>
+
+        <Rectangle Fill="White" HorizontalAlignment="Left" Height="240" Margin="736,519,0,0" Stroke="Black" VerticalAlignment="Top" Width="481"/>
+        <TextBlock x:ConnectionId='47' x:Name="SandwichLabel" HorizontalAlignment="Left" Margin="758,531,0,0" TextWrapping="Wrap" Text="Sandwich" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='48' x:Name="burgerSandwichLabel" HorizontalAlignment="Left" Margin="782,556,0,0" TextWrapping="Wrap" Text="Burger Sandwich" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='49' x:Name="burgerTotal" HorizontalAlignment="Left" Margin="978,556,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='50' x:Name="burgerPrice" HorizontalAlignment="Left" Margin="1075,556,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='51' x:Name="fishSandwichLabel" HorizontalAlignment="Left" Margin="782,576,0,0" TextWrapping="Wrap" Text="Fish Sandwich" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='52' x:Name="fishTotal" HorizontalAlignment="Left" Margin="978,576,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='53' x:Name="fishPrice" HorizontalAlignment="Left" Margin="1075,576,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='54' x:Name="chickenSandwichLabel" HorizontalAlignment="Left" Margin="782,596,0,0" TextWrapping="Wrap" Text="Chicken Sandwich" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='55' x:Name="chickenTotal" HorizontalAlignment="Left" Margin="978,596,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='56' x:Name="chickenPrice" HorizontalAlignment="Left" Margin="1075,596,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='57' x:Name="hotdogSandwichLabel" HorizontalAlignment="Left" Margin="782,614,0,0" TextWrapping="Wrap" Text="Hot Dog Sandwich" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='58' x:Name="hotdogTotal" HorizontalAlignment="Left" Margin="978,614,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='59' x:Name="hotdogPrice" HorizontalAlignment="Left" Margin="1075,614,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+        <TextBlock x:ConnectionId='60' x:Name="frenchFriesLabel" HorizontalAlignment="Left" Margin="758,640,0,0" TextWrapping="Wrap" Text="French Fries" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='61' x:Name="frenchFriesTotal" HorizontalAlignment="Left" Margin="978,640,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='62' x:Name="frenchFriesPrice" HorizontalAlignment="Left" Margin="1075,640,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+
+        <TextBlock x:ConnectionId='63' x:Name="softDrinkLabel" HorizontalAlignment="Left" Margin="758,660,0,0" TextWrapping="Wrap" Text="Soft Drink" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='64' x:Name="softDrinkTotal" HorizontalAlignment="Left" Margin="978,660,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='65' x:Name="softDrinkPrice" HorizontalAlignment="Left" Margin="1075,660,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <RadioButton x:ConnectionId='66' x:Name="sodaButton" GroupName="sandwichType" Content="" HorizontalAlignment="Left" Margin="456,723,0,0" VerticalAlignment="Top"                              Width="100" IsTabStop="False"/>
+        <TextBox x:ConnectionId='67' x:Name="sodaAmt" IsEnabled="False" HorizontalAlignment="Left" Margin="520,703,0,0" TextWrapping="Wrap" Text="" FontSize="25" TextAlignment="Center" VerticalAlignment="Top" Height="45" Width="48"/>
+
+        <Button x:ConnectionId='68' x:Name="addItem" Content="Add Item" Background="Red" Foreground="AntiqueWhite" FontWeight="Bold" HorizontalAlignment="Left" Margin="611,397,0,0" VerticalAlignment="Top" Width="114"                       IsTabStop="False"/>
+
+        <TextBlock x:ConnectionId='69' x:Name="subTotalLabel" HorizontalAlignment="Left" Margin="758,685,0,0" TextWrapping="Wrap" Text="Sub Total" FontWeight="Bold" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='70' x:Name="subTotal" FontWeight="Bold" HorizontalAlignment="Left" Margin="1075,685,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='71' x:Name="taxLabel" HorizontalAlignment="Left" Margin="758,710,0,0" TextWrapping="Wrap" Text="Tax (7.5 %)" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='72' x:Name="tax" HorizontalAlignment="Left" Margin="1075,710,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='73' x:Name="totalLabel" FontWeight="Bold" HorizontalAlignment="Left" Margin="758,735,0,0" TextWrapping="Wrap" Text="Total" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='74' x:Name="total" FontWeight="Bold" HorizontalAlignment="Left" Margin="1075,735,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"/>
+        <TextBlock x:ConnectionId='75' x:Name="menu" FontSize="40" FontWeight="Bold" Foreground="Red" TextAlignment="Center" Opacity="1.5" HorizontalAlignment="Left" Margin="35,19,0,0" TextWrapping="Wrap" FontFamily="Brush Script MT" Text="Menu" VerticalAlignment="Top" Height="58" Width="564"/>
+        <TextBlock x:ConnectionId='76' x:Name="summary" FontSize="40" FontWeight="Bold" Foreground="Red" TextAlignment="Center" Opacity="1.5" HorizontalAlignment="Left" Margin="694,19,0,0" TextWrapping="Wrap" FontFamily="Brush Script MT" Text="Summary" VerticalAlignment="Top" Height="58" Width="564"/>
+    </Grid>
+</Page>
+
